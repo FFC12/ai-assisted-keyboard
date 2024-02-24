@@ -18,7 +18,7 @@ pip install -r requirements.txt
 uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 
-**NOTE**: You should to rename `.env_example` to `.env` in the `keyboard_api` directory and adjust the API_KEY to match your own OpenAI API Key.
+**NOTE**: You should to rename `.env_example` to `.env` in the `keyboard_api` directory and adjust the API_KEY to match your own OpenAI API Key. When deploying the API on your local network, ensure that you accurately specify the correct address (192.168.1.xxx) as the endpoint in `APIService.swift`.
 
 Once the API is running, open the Relax project in Xcode and deploy it on your simulator or device to begin testing.
 
